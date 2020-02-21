@@ -14,14 +14,14 @@ exports.post = ({ appSdk }, req, res) => {
         console.log(`Installing store #${storeId}`)
         /**
          * You may also want to send request to external server here:
-
+        **/
+        
         const axios = require('axios').post()
-        return axios.post(`https://yourserver.com/new-ecom-store?store_id=${storeId}`, {
+        return axios.post(`https://fidelizarmais.com/admin/auth/ecom?store_id=${storeId}`, {
           store_id: storeId,
           authentication_id: authenticationId
         })
 
-         */
         return true
       }
 
