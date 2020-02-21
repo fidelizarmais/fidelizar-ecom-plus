@@ -6,12 +6,27 @@
  */
 
 const app = {
-  app_id: 9000,
-  title: 'My Awesome E-Com Plus App',
+  app_id: 1249,
+  title: 'Programa de fidelidade',
   state: 'active',
   type: 'external',
   authentication: true,
 
+    /**
+   * Configuration fields for merchant on E-Com Plus dashboard
+   */
+  admin_settings: {
+    fidelizarmais_token: {
+      schema: {
+        type: 'string',
+        maxLength: 255,
+        title: 'Token Fidelizar Mais',
+        description: 'Token disponível no seu painel Fidelizar Mais',
+      },
+      hide: true
+    },
+  },
+  
   /**
    * Uncomment modules above to work with E-Com Plus Mods API on Storefront.
    * Ref.: https://developers.e-com.plus/modules-api/
