@@ -7,7 +7,7 @@
 
 const app = {
   app_id: 1249,
-  title: 'Programa de fidelidade',
+  title: "Programa de fidelidade",
   state: 'active',
   type: 'external',
   authentication: true,
